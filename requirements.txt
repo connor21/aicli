@@ -1,0 +1,4 @@
+openai-whisper
+moviepy
+typer
+pdfminer.six
