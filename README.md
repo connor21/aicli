@@ -1,4 +1,4 @@
-# vsentiment - Audio Transcription Tool
+# Audio Transcription Tool
 
 ## Overview
 Command line tool for transcribing audio files to text using OpenAI's Whisper model.
