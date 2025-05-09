@@ -32,12 +32,19 @@ The tool also includes `pdf2md.py` for converting PDF files to markdown format.
 
 ### Usage
 ```bash
-python pdf2md.py input.pdf output.md
+python pdf2md.py input.pdf output.md [--ocr]
 ```
 
 ### Arguments
-- `input.pdf`: Path to PDF file to convert
-- `output.md`: Path to save markdown output
+- `input.pdf`: Path to PDF file to convert  
+- `output.md`: Path to save markdown output  
+- `--ocr`: Optional flag to enable OCR processing of bitmap content (default: disabled)
+
+### OCR Notes
+- When enabled with --ocr, the tool will:
+  - Extract text from bitmap images using Tesseract OCR
+  - Combine OCR results with regular text extraction
+  - May significantly increase processing time
 
 ### Examples
 ```bash

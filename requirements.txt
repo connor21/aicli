@@ -2,3 +2,7 @@ openai-whisper
 moviepy
 typer
 pdfminer.six
+pytesseract
+pdf2image
+pillow
+poppler-utils
