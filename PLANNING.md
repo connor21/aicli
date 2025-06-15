@@ -10,6 +10,7 @@ A Collection of command line tools to utilize AI tools.
 ## Components
 1. **TRANSSCRIBE**
    - CLI to transscribe audio files to text
+   - Anonymize text with SpaCy
  
 ## Environment Configuration
 
@@ -17,6 +18,7 @@ A Collection of command line tools to utilize AI tools.
 ```
 vsentiment/
 ├── transscribe.py         # Command line tool to transscribe audio to text
+├── anon.py                # anonymize textfiles
 ├── pdf2md.py              # conver pd to markdown
 ├── requirements.txt       # Python dependencies
 ├── README.md              # Project documentation

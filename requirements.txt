@@ -6,3 +6,5 @@ pytesseract
 pdf2image
 pillow
 poppler-utils
+spacy
+de_core_news_sm

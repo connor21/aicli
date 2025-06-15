@@ -17,3 +17,7 @@
 - [x] implement OCR to convert bitmap data to text in `pdf2md.py`
 - [x] Add OCR result to output file
 - [x] Add parameter to `pdf2md.py` enable OCR or disable OCR extraction - default is disable OCR extraction
+
+## Implement Anonymization
+
+- [x] implement anonymization for text in `anon.py`
