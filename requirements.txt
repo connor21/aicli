@@ -8,3 +8,4 @@ pillow
 poppler-utils
 spacy
 de_core_news_sm
+rapidfuzz

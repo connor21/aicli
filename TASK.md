@@ -21,3 +21,5 @@
 ## Implement Anonymization
 
 - [x] implement anonymization for text in `anon.py`
+- [x] extend `anon.py` to support a custom word list and regular expressions to find words that should be anonymized
+- [x] Add fuzzy matching option using rapidfuzz for similar words

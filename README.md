@@ -53,3 +53,48 @@ python pdf2md.py document.pdf converted.md
 
 # Transcribe an audio file
 python transscribe.py lecture.mp3 transcript.txt
+
+## Text Anonymization Tool
+
+The tool includes `anon.py` for anonymizing sensitive information in German text files.
+
+### Usage
+```bash
+python anon.py input.txt [output.txt] [OPTIONS]
+```
+
+### Arguments
+- `input.txt`: Path to text file to anonymize
+- `output.txt`: Optional output path (default: input.anon)
+
+### Options
+- `--custom-words`: Path to JSON file with custom words to anonymize
+- `--regex`: Regex pattern for additional matches
+- `--fuzzy`: Enable fuzzy matching for custom words
+- `--fuzzy-threshold`: Similarity threshold for fuzzy matches (0-100, default: 85)
+
+### Examples
+```bash
+# Basic anonymization
+python anon.py document.txt
+
+# With custom words list
+python anon.py document.txt --custom-words sensitive.json
+
+# With regex pattern for phone numbers
+python anon.py document.txt --regex "\d{3}-\d{3}-\d{4}"
+
+# With fuzzy matching
+python anon.py document.txt --custom-words names.json --fuzzy --fuzzy-threshold 80
+```
+
+### Custom Words File Format
+Create a JSON file (e.g., sensitive.json) with an array of terms:
+```json
+[
+    "Meier",
+    "Müller",
+    "Bankverbindung",
+    "Krankenkasse"
+]
+```
