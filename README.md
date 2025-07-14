@@ -16,14 +16,28 @@ To transcribe an audio file:
 python transscribe.py input.mp3 output.txt
 ```
 
+To transcribe a specific segment (30s to 90s):
+```bash
+python transscribe.py input.mp3 output.txt --start-time 30 --end-time 90
+```
+
+### Notes:
+- Time parameters require ffmpeg to be installed on your system
+- Supported audio formats: MP3, WAV, FLAC, etc.
+- For large files, processing just a segment can be faster
+
 ### Arguments
 - `input.mp3`: Path to audio file to transcribe (supports MP3, WAV, etc.)
 - `output.txt`: Path to save transcription text
+- `--start-time`: Optional start time in seconds (transcribe from this point)
+- `--end-time`: Optional end time in seconds (transcribe up to this point)
 
 ## Dependencies
 - Python 3.7+
 - whisper
 - typer
+- pydub (for audio segment extraction)
+- ffmpeg (required by pydub - install via system package manager)
 - moviepy (for audio extraction from video)
 
 ## PDF to Markdown Conversion
